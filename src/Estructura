@@ -1,0 +1,19 @@
+src/
+├── components/
+│   ├── common/         // Componentes que se usan en múltiples páginas
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Button.jsx
+│   │   └── Card.jsx
+│   ├── home/          // Solo componentes específicos de home
+│   │   ├── Hero.jsx
+│   │   └── Features.jsx
+│   ├── about/         // Solo componentes específicos de about
+│   │   └── Team.jsx
+│   └── contact/       // Solo componentes específicos de contact
+│       └── ContactForm.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   └── Contact.jsx
+└── App.jsx

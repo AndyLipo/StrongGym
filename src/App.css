@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+    /* Naranja logo */
+    --color-primary: #FF8C00;
+    /* Naranja claro */
+    --color-secondary: #FFD86D;
+    /* Negro */
+    --color-background: #000000;
+}
