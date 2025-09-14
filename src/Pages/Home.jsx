@@ -8,6 +8,8 @@ import { AboutVideoComponent } from '../Components/Home/AboutVideoComponent'
 import { MapComponent } from '../Components/Home/MapComponent'
 import { HeroText } from '../Components/Home/HeroText'
 import { Trainers } from '../Components/Home/Trainers'
+import { PricingSection } from '../Components/Home/PricingSection'
+import { SuccessStories } from '../Components/Home/SuccessStories'
 
 export const Home = ({ heroData }) => {
     const { content } = HeroText;
@@ -54,8 +56,16 @@ export const Home = ({ heroData }) => {
                             </AboutVideoComponent>
                         </ContainerAb>
                     </section>
+                    {/* Entrenadores */}
                     <section className='max-h-fit mt-40'>
                         <Trainers />
+                    </section>
+                    {/* Planes de pago */}
+                    <section>
+                        <PricingSection />
+                    </section>
+                    <section>
+                        <SuccessStories />
                     </section>
                     {/* Contact Section - Mapa */}
                     <section className="mt-20 md:mt-28 lg:mt-70 px-4 md:px-8 lg:px-20">

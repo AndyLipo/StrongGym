@@ -2,6 +2,7 @@ import { ContainerAb } from '../Common/ContainerAb'
 import { HeroText } from './HeroText' // Asegúrate de importar las imágenes
 import Martin from '../../assets/Martin.jpg'
 import Mirta from '../../assets/Mirta.jpg'
+import { ButtonGtStrt } from '../Common/ButtonGtStrt'
 export const Trainers = () => {
     const { Images } = HeroText; // Obtener las imágenes
 
@@ -27,48 +28,57 @@ export const Trainers = () => {
                         Vestibulum faucibus interdum nunc, et eleifend neque sagittis sit.
                         Donec dignissim quam eu aliquet fermentum.
                     </p>
-                    <button className="bg-black/20 hover:bg-black/30 text-white px-6 py-3 rounded-full border border-white/20 transition-all duration-300 w-fit">
-                        More Trainers →
-                    </button>
+                    <ButtonGtStrt txt="Más entrenadores" />
                 </div>
-
                 {/* Lado derecho - Imagen del trainer */}
                 <div className="flex-1 flex items-center justify-center p-8">
-                    <div className="relative w-full max-w-2xl h-80">
-                        {/* Card Martin (superpuesta, más atrás) */}
-                        <div className="absolute top-4 left-8 z-10 group cursor-pointer">
-                            <div className="relative w-64 h-82 rounded-4xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-105 group-hover:z-30"
+                    <div className="relative w-full max-w-xl h-96">
+                        {/* Card Claudio (atrás) */}
+                        <div className="absolute bottom-50 -left-50 z-10 group cursor-pointer transform -rotate-2">
+                            <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
                                 style={{ backgroundImage: `url(${Martin})` }}>
-                                {/* Overlay gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                {/* Overlay gradient más suave */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
                                 {/* Texto superpuesto */}
-                                <div className="absolute bottom-6 left-6 text-white">
-                                    <h3 className="text-2xl font-bold mb-1">Jack Drake</h3>
-                                    <p className="text-zinc-300 text-sm">Trainer 1</p>
+                                <div className="absolute bottom-8 left-8 text-white">
+                                    <h3 className="text-3xl font-bold mb-2">Claudio</h3>
+                                    <p className="text-zinc-200 text-base">Entrenador Personal</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Card Martin (atrás) */}
+                        <div className="absolute top-0 left-13 z-10 group cursor-pointer transform -rotate-2">
+                            <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
+                                style={{ backgroundImage: `url(${Martin})` }}>
+                                {/* Overlay gradient más suave */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+                                {/* Texto superpuesto */}
+                                <div className="absolute bottom-8 left-8 text-white">
+                                    <h3 className="text-3xl font-bold mb-2">Martin</h3>
+                                    <p className="text-zinc-200 text-base">Entrenador Personal</p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Card Mirta (superpuesta, más adelante) */}
-                        <div className="absolute top-8 right-4 z-20 group cursor-pointer">
-                            <div className="relative w-64 h-72 rounded-4xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-105 group-hover:z-30"
+                        {/* Card Mirta (adelante) */}
+                        <div className="absolute top-12 -right-5 z-20 group cursor-pointer transform -rotate-2">
+                            <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
                                 style={{ backgroundImage: `url(${Mirta})` }}>
-                                {/* Overlay gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                {/* Overlay gradient más suave */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
                                 {/* Texto superpuesto */}
-                                <div className="absolute bottom-6 left-6 text-white">
-                                    <h3 className="text-2xl font-bold mb-1">Nathaniel</h3>
-                                    <p className="text-zinc-300 text-sm">Trainer 2</p>
+                                <div className="absolute bottom-8 left-8 text-white">
+                                    <h3 className="text-3xl font-bold mb-2">Mirta</h3>
+                                    <p className="text-zinc-200 text-base">Especialista Fitness</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

@@ -1,6 +1,4 @@
 import imgAbout from '../../assets/imgAbout.webp'
-import Martin from '../../assets/Martin.jpg'
-import Mirta from '../../assets/Mirta.jpg'
 
 export const HeroText = {
     content: {
@@ -24,13 +22,6 @@ export const HeroText = {
                 street: "K.H. Ahmad Dahlan, 44",
                 city: "Bandar Lampung"
             },
-            socialMedia: [
-                { name: "Twitter", icon: "T", url: "#" },
-                { name: "YouTube", icon: "Y", url: "#" },
-                { name: "Facebook", icon: "F", url: "#" },
-                { name: "TikTok", icon: "T", url: "#" },
-                { name: "Instagram", icon: "I", url: "#" }
-            ]
         },
 
         // Configuraciones de sección
@@ -50,11 +41,110 @@ export const HeroText = {
                 showContactInfo: true
             }
         },
+        pricing: {
+            title: "Membership Pricing",
+            subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 
-        //Imagenes para entrenadores
-        Images: {
-            ImgEntrenador1: Martin,
-            ImgEntrenador2: Mirta
+            // Planes sin entrenador
+            withoutTrainer: [
+                {
+                    plan: "Diario",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $15.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Uso de equipos básicos",
+                        "Acceso por 1 día"
+                    ]
+                },
+                {
+                    plan: "Semanal",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $60.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Uso de equipos básicos",
+                        "Acceso por 1 semana",
+                        "Clases grupales incluidas"
+                    ],
+                    isPopular: true
+                },
+                {
+                    plan: "Mensual",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $150.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Uso de equipos básicos",
+                        "Acceso por 1 mes",
+                        "Clases grupales incluidas",
+                        "Plan nutricional básico"
+                    ]
+                }
+            ],
+
+            // Planes con entrenador
+            withTrainer: [
+                {
+                    plan: "Diario",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $25.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Entrenador personal incluido",
+                        "Rutina personalizada",
+                        "Acceso por 1 día"
+                    ]
+                },
+                {
+                    plan: "Semanal",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $120.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Entrenador personal incluido",
+                        "Rutina personalizada",
+                        "Seguimiento semanal",
+                        "Clases grupales incluidas"
+                    ],
+                    isPopular: true
+                },
+                {
+                    plan: "Mensual",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum nunc, et eleifend neque sagittis et. Donec dignissim quam eu aliquet fermentum.",
+                    price: "Ars $300.000",
+                    features: [
+                        "Acceso completo al gimnasio",
+                        "Entrenador personal dedicado",
+                        "Rutina personalizada",
+                        "Seguimiento diario",
+                        "Plan nutricional completo",
+                        "Evaluaciones semanales"
+                    ]
+                }
+            ]
+        },
+        successStories: {
+            title: "Member's Success Story",
+            subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            description: "Vestibulum faucibus interdum nunc, et eleifend neque sagittis et.",
+            stories: [
+                {
+                    id: 1,
+                    name: "Derek",
+                    image: "/path/to/derek.jpg", // Ruta real de tu imagen
+                    rating: 5,
+                    testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
+                },
+                {
+                    id: 2,
+                    name: "Anthony",
+                    image: "/path/to/anthony.jpg",
+                    rating: 5,
+                    testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
+                },
+                // ... más historias
+            ]
         }
     }
 }
