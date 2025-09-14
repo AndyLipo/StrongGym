@@ -1,6 +1,6 @@
-export default function CardShape1({ icon, title, description }) {
+export default function CardShape1({ icon, title }) {
     return (
-        <div className='relative hover:scale-105 transition-all duration-300'>
+        <div className='relative'>
             {/* SVG como contenedor principal de la card */}
             <svg viewBox="0 0 700 600" className="absolute inset-0 filter drop-shadow-lg h-[450px] -mt-20 -ml-22">
                 <defs>
@@ -29,24 +29,24 @@ export default function CardShape1({ icon, title, description }) {
             </svg>
 
             {/* Contenido dentro de la forma del SVG */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-6">
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
                 {/* Icon sin fondo */}
-                <div className="flex items-center justify-center text-orange-500 text-4xl mb-6">
+                <div className="flex items-center justify-center text-orange-500 text-3xl">
                     {typeof icon === 'string' && icon.includes('.svg') ? (
-                        <img src={icon} alt={title} className="w-12 h-12 filter brightness-0  invert-[0.4] sepia-[1] saturate-[5] hue-rotate-[15deg]" />
+                        <img src={icon} alt={title} className="size-48" />
                     ) : (
-                        <span>{icon}</span>
+                        <img src={icon} alt={title}>{icon}</img>
                     )}
                 </div>
 
                 {/* Título */}
-                <h3 className="text-white font-bold text-xl mb-2">{title}</h3>
+                <h3 className="text-white font-bold text-xl mb-2 -mt-12">{title}</h3>
 
                 {/* HR Separator */}
-                <hr className="w-16 border-t-2 border-orange-500 mb-4" />
+                {/* <hr className="w-16 border-t-2 border-orange-500 mb-4" /> */}
 
                 {/* Descripción */}
-                <p className="text-gray-300 text-sm leading-relaxed max-w-xs">{description}</p>
+                {/* <p className="text-gray-300 text-sm leading-relaxed max-w-xs">{description}</p> */}
             </div>
         </div>
     );

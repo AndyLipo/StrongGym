@@ -3,18 +3,19 @@ import CardShape2 from "../Common/CardShape2"
 import CardShape3 from "../Common/CardShape3"
 
 import Dieta from '../../assets/dieta.svg'
-import Pesas from '../../assets/bicep.svg'
+import Bicep from '../../assets/bicep.svg'
+import Spinning from '../../assets/spinning.svg'
 
 export const FitnessCards = () => {
     const cards = [
         {
-            icon: "🏋️",
+            icon: Spinning,
             title: "WeightLifting",
             description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Faucibus Interdum",
             CardComponent: CardShape2 // izquierda - forma inclinada hacia la derecha
         },
         {
-            icon: Pesas,
+            icon: Bicep,
             title: "Private Training",
             description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Faucibus Interdum Nunc, Et Eleifend Neque Sagittis Et",
             CardComponent: CardShape1 // centro - forma trapezoidal
@@ -28,7 +29,7 @@ export const FitnessCards = () => {
     ]
 
     return (
-        <div className="flex flex-col lg:flex-row max-w-6xl mx-auto p-6 items-center justify-center">
+        <div className="flex flex-col lg:flex-row max-w-6xl mx-auto items-center justify-center">
             {cards.map((card, index) => {
                 const Component = card.CardComponent;
                 return (
