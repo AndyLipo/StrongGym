@@ -10,20 +10,17 @@ export const FitnessCards = () => {
     const cards = [
         {
             icon: Spinning,
-            title: "WeightLifting",
-            description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Faucibus Interdum",
+            title: "Spinning",
             CardComponent: CardShape2 // izquierda - forma inclinada hacia la derecha
         },
         {
             icon: Bicep,
-            title: "Private Training",
-            description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Faucibus Interdum Nunc, Et Eleifend Neque Sagittis Et",
+            title: "Entrenamiento Personalizado",
             CardComponent: CardShape1 // centro - forma trapezoidal
         },
         {
             icon: Dieta,
-            title: "Build Muscle",
-            description: "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vestibulum Faucibus Interdum",
+            title: "Dieta",
             CardComponent: CardShape3 // derecha - forma inclinada hacia la izquierda
         }
     ]

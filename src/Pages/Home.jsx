@@ -47,7 +47,7 @@ export const Home = ({ heroData }) => {
                                         {content.sections.aboutUs.subtitle}
                                     </p>
                                     <p className="text-zinc-300 leading-relaxed max-w-sm">
-                                        {content.about}
+                                        {content.sections.aboutUs.description}
                                     </p>
                                 </div>
                                 <a className='relative bottom-20 right-150'>
@@ -64,27 +64,30 @@ export const Home = ({ heroData }) => {
                     <section>
                         <PricingSection />
                     </section>
-                    <section>
+                    <section >
                         <SuccessStories />
                     </section>
                     {/* Contact Section - Mapa */}
-                    <section className="mt-20 md:mt-28 lg:mt-70 px-4 md:px-8 lg:px-20">
+                    <section className="mt-20 md:mt-28 lg:mt-70 px-4 md:px-8">
                         <div className="mb-8 text-center">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                                {content.sections.contact.title}
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
+                                Sos bienvenido a <span className="text-3xl md:text-4xl font-bold mb-4 text-[#FF8C00]">Unirtenos!</span>
                             </h2>
-                            <p className="text-lg text-zinc-300 max-w-2xl mx-auto">
-                                {content.sections.contact.subtitle}
-                            </p>
                         </div>
 
-                        <ContainerAb>
-                            <MapComponent contactData={content.contact} />
-                        </ContainerAb>
+                        {/* Contenedor personalizado solo para el mapa */}
+                        <div className="flex justify-center items-center">
+                            <div className='w-full max-w-7xl rounded-4xl overflow-hidden bg-zinc-800/50 backdrop-blur-sm border border-zinc-700/30'>
+                                <MapComponent contactData={content.contact} />
+                            </div>
+                        </div>
                     </section>
 
                     {/* Espaciado final */}
                     <div className="h-20"></div>
+                    <footer className='bg-black py-8'>
+                        <p className='text-white flex justify-center items-center'>2025 All right reserved</p>
+                    </footer>
                 </div>
             </div>
         </>

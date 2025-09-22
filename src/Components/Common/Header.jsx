@@ -2,11 +2,11 @@ import { HeaderLink } from './HeaderLink'
 
 export const Header = () => {
     const navItems = [
-        { label: 'Home', href: '/' },
-        { label: 'About', href: '/about' },
-        { label: 'Trainers', href: '/trainers' },
-        { label: 'Pricing', href: '/pricing' },
-        { label: 'Sucess Story', href: '/SucessStory' },
+        { label: 'Inicio', href: '/' },
+        { label: 'Sobre Nosotros', href: '/about' },
+        { label: 'Entrenadores', href: '/trainers' },
+        { label: 'Precios', href: '/pricing' },
+        { label: 'Testimonio', href: '/SucessStory' },
     ]
 
     return (

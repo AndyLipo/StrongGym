@@ -31,7 +31,7 @@ export default function CardShape1({ icon, title }) {
             {/* Contenido dentro de la forma del SVG */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
                 {/* Icon sin fondo */}
-                <div className="flex items-center justify-center text-orange-500 text-3xl">
+                <div className="flex items-center justify-center text-3xl">
                     {typeof icon === 'string' && icon.includes('.svg') ? (
                         <img src={icon} alt={title} className="size-48" />
                     ) : (
@@ -40,13 +40,7 @@ export default function CardShape1({ icon, title }) {
                 </div>
 
                 {/* Título */}
-                <h3 className="text-white font-bold text-xl mb-2 -mt-12">{title}</h3>
-
-                {/* HR Separator */}
-                {/* <hr className="w-16 border-t-2 border-orange-500 mb-4" /> */}
-
-                {/* Descripción */}
-                {/* <p className="text-gray-300 text-sm leading-relaxed max-w-xs">{description}</p> */}
+                <h3 className="text-white font-bold text-xl mb-2 -mt-12 -ml-10">{title}</h3>
             </div>
         </div>
     );

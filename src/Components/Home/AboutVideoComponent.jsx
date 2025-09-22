@@ -2,7 +2,7 @@ import AboutVideo from '../../assets/AboutVideo.mp4'
 
 export const AboutVideoComponent = ({ children, title, subtitle }) => {
     return (
-        <div className="w-full h-150 ">
+        <div className="w-full h-150">
             <video
                 className='w-full h-full object-cover'
                 autoPlay

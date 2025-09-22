@@ -3,12 +3,12 @@ import imgAbout from '../../assets/imgAbout.webp'
 export const HeroText = {
     content: {
         mainTitle: {
-            prefix: "build your",
-            highlight: "body shapes",
-            suffix: "with",
-            highlight2: "fitness",
+            prefix: "Esculpe tu",
+            highlight: "cuerpo ideal",
+            suffix: "con",
+            highlight2: "Ejercicio",
         },
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, animi delectus ea quidem commodiss dolorem sequi, minima mollitia earum dicta, deleniti architecto voluptate nemo rem? Quas esse ratione eaque explicabo!",
+        description: "Más que un gimnasio, somos tu compañero en el viaje hacia una vida más saludable y activa. Aquí forjarás no solo músculos, sino también determinación, autoestima y hábitos que durarán toda la vida. ¿Estás listo para el desafío?",
 
         imgAbout: imgAbout,
 
@@ -16,29 +16,22 @@ export const HeroText = {
 
         // Datos de contacto
         contact: {
-            email: "LPGFITNESS@FITNESS.COM",
-            phone: "+6289988772233",
+            email: "strongtraining.arg@gmail.com",
+            phone: "+54 9 3484378204",
             address: {
-                street: "K.H. Ahmad Dahlan, 44",
-                city: "Bandar Lampung"
+                street: "Juan P. Asborno 1650",
+                city: "Belen de Escobar"
             },
         },
 
         // Configuraciones de sección
         sections: {
             aboutUs: {
-                title: "About Us",
+                title: "Sobre Nosotros",
                 subtitle: "Conoce nuestra historia",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores eveniet vitae dolorem vero, dolorum consequuntur natus.",
+                description: "Somos un gimnasio familiar con más de 5 años forjando vínculos y transformando vidas. Nuestro ambiente acogedor y personal capacitado te acompañan en cada paso de tu viaje fitness, creciendo juntos como una gran familia.",
                 showVideo: true,
                 showText: true
-            },
-            contact: {
-                title: "Contacto",
-                subtitle: "Visitanos o contactanos",
-                description: "Encuentra nuestra ubicación y ponte en contacto con nosotros.",
-                showMap: true,
-                showContactInfo: true
             }
         },
         pricing: {
@@ -138,12 +131,18 @@ export const HeroText = {
                 },
                 {
                     id: 2,
-                    name: "Anthony",
+                    name: "Juan",
                     image: "/path/to/anthony.jpg",
                     rating: 5,
                     testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
                 },
-                // ... más historias
+                {
+                    id: 3,
+                    name: "Maria",
+                    image: "/path/to/anthony.jpg",
+                    rating: 5,
+                    testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
+                },
             ]
         }
     }
