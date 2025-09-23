@@ -1,22 +1,30 @@
-import { HeaderLink } from './HeaderLink'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
     const navItems = [
-        { label: 'Inicio', href: '/' },
-        { label: 'Sobre Nosotros', href: '/about' },
-        { label: 'Entrenadores', href: '/trainers' },
-        { label: 'Precios', href: '/pricing' },
-        { label: 'Testimonio', href: '/SucessStory' },
+        { label: 'Inicio', to: '/' },
+        { label: 'Sobre Nosotros', to: '/sobrenosotros' },
+        { label: 'Contacto', to: '/contacto' },
     ]
 
     return (
         <>
             <div className=''>
                 <div className='flex items-center gap-6 m-5 z-10'>
-                    {navItems.map((navItems) => (
-                        <HeaderLink key={navItems.href} navItems={navItems} />
-                    ))
-                    }
+                    {navItems.map((item) => (
+                        <NavLink
+                            key={item.to}
+                            to={item.to}
+                            className={({ isActive }) =>
+                                isActive
+                                    ? 'text-[#FF8C00] font-semibold text-xl'
+                                    : 'text-gray-200 hover:text-[#FF8C00] transition-colors text-lg'
+                            }
+                            end={item.to === '/'}
+                        >
+                            {item.label}
+                        </NavLink>
+                    ))}
                 </div>
             </div>
         </>

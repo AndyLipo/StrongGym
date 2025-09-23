@@ -35,7 +35,7 @@ export const HeroText = {
             }
         },
         pricing: {
-            title: "Membership Pricing",
+            title: "Membresia",
             subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 
             // Planes sin entrenador
@@ -118,7 +118,7 @@ export const HeroText = {
             ]
         },
         successStories: {
-            title: "Member's Success Story",
+            title: "Testimonio de vida",
             subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             description: "Vestibulum faucibus interdum nunc, et eleifend neque sagittis et.",
             stories: [
@@ -139,6 +139,13 @@ export const HeroText = {
                 {
                     id: 3,
                     name: "Maria",
+                    image: "/path/to/anthony.jpg",
+                    rating: 5,
+                    testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
+                },
+                {
+                    id: 4,
+                    name: "Rocio",
                     image: "/path/to/anthony.jpg",
                     rating: 5,
                     testimonial: "Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Vestibulum Faucibus"
