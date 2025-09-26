@@ -1,4 +1,5 @@
 import { HeroVideo } from "../Components/About/HeroVideo"
+import { Historia } from "../Components/About/Historia"
 import { Header } from "../Components/Common/Header"
 
 export const About = () => {
@@ -12,6 +13,9 @@ export const About = () => {
                 </div>
                 <section>
                     <HeroVideo />
+                </section>
+                <section>
+                    <Historia />
                 </section>
             </div>
         </>

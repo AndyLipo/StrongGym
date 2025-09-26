@@ -10,6 +10,7 @@ import { HeroText } from '../Components/Home/HeroText'
 import { Trainers } from '../Components/Home/Trainers'
 import { PricingSection } from '../Components/Home/PricingSection'
 import { SuccessStories } from '../Components/Home/SuccessStories'
+import { Footer } from '../Components/Common/Footer'
 
 export const Home = ({ heroData }) => {
     const { content } = HeroText;
@@ -68,7 +69,7 @@ export const Home = ({ heroData }) => {
                         <SuccessStories />
                     </section>
                     {/* Contact Section - Mapa */}
-                    <section className="mt-20 md:mt-28 lg:mt-70 px-4 md:px-8">
+                    <section className="mt-20 md:mt-28 lg:mt-30 px-4 md:px-8">
                         <div className="mb-8 text-center">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
                                 Sos bienvenido a <span className="text-3xl md:text-4xl font-bold mb-4 text-[#FF8C00]">Unirtenos!</span>
@@ -84,10 +85,7 @@ export const Home = ({ heroData }) => {
                     </section>
 
                     {/* Espaciado final */}
-                    <div className="h-20"></div>
-                    <footer className='bg-black py-8'>
-                        <p className='text-white flex justify-center items-center'>2025 All right reserved</p>
-                    </footer>
+                    <Footer />
                 </div>
             </div>
         </>
