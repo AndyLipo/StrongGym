@@ -11,7 +11,7 @@ export const Logros = () => {
                 <Señalador numero="5 " text="Logros" className="inline-block" />
             </section>
 
-            <section className="bg-gray-900 py-16 mt-10">
+            <section className="bg-gray-950 py-16 mt-10">
                 <div className="container mx-auto px-4">
                     {/* Grid de estadísticas */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
