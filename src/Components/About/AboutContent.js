@@ -111,46 +111,5 @@ export const AboutContent = {
             titulo: "¿Listo para ser parte de nuestra familia?",
             botonTexto: "ÚNETE AHORA"
         }
-    },
-    //Card Contacto
-    Contactos: [
-        {
-            id: 1,
-            nombre: "Llamanos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto1",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        },
-        {
-            id: 2,
-            nombre: "Visitanos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto2",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        },
-        {
-            id: 3,
-            nombre: "Escribenos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto3",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-        },
-    ],
-    //Horarios
-    Horarios: [
-        {
-            id: 1,
-            nombre: "Días de Semana",
-            texto: "lunes a viernes",
-            horario: "8:00 AM - 21:00 PM",
-            horarioExt: "horario extendido"
-        },
-        {
-            id: 2,
-            nombre: "Fin de semana",
-            texto: "sábado",
-            horario: "7:00 AM - 12:00 AM",
-
-        }
-    ]
+    }
 }

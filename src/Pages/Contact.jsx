@@ -1,4 +1,5 @@
 import { Header } from '../Components/Common/Header'
+import { ContactoForm } from '../Components/Contact/ContactoForm'
 import { HeroContact } from '../Components/Contact/HeroContact'
 import { Horarios } from '../Components/Contact/Horarios'
 import { InfoContacto } from '../Components/Contact/InfoContacto'
@@ -22,6 +23,9 @@ export const Contact = () => {
                     </section>
                     <section>
                         <Horarios />
+                    </section>
+                    <section>
+                        <ContactoForm />
                     </section>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 export default function CardShape3({ icon, title }) {
     return (
-        <div className='relative '>
+        <div className='relative overflow-hidden'>
             {/* SVG como contenedor principal de la card */}
             <svg viewBox="0 0 700 600" className="absolute inset-0 -ml-9 h-[400px] -mt-12 filter drop-shadow-lg">
                 <defs>
@@ -10,8 +10,7 @@ export default function CardShape3({ icon, title }) {
                 </defs>
                 <path
                     d="
-            M 106 42 L 422 107 C 440 118, 450 128, 447 140 L 396 439 C 389 468, 373 478, 345 480 L 50 481 C 23 480, 7 468, 0 440 L 55 68 C 67 56, 87 46, 106 42 Z
-          "
+            M 106 42 L 422 107 C 440 118, 450 128, 447 140 L 396 439 C 389 468, 373 478, 345 480 L 50 481 C 23 480, 7 468, 0 440 L 55 68 C 67 56, 87 46, 106 42 Z"
                     fill="rgba(31, 41, 55, 0.3)"
                     stroke="rgba(107, 114, 128, 0.3)"
                     strokeWidth="2"

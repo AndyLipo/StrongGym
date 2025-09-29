@@ -1,7 +1,7 @@
-import { AboutContent } from '../About/AboutContent'
+import { ContactContent } from './ContactContent'
 
 export const CardContacto = () => {
-    const { Contactos } = AboutContent
+    const { Contactos } = ContactContent
     return (
         <>
             <div className="flex justify-center items-center px-4">

@@ -1,13 +1,11 @@
-export const MapComponent = ({ contactData, txt }) => {
-    // URL para abrir Google Maps en una nueva pestaña
+export const MapComponent = () => {
     const openGoogleMaps = () => {
         const mapsUrl = "https://www.google.com/maps/place/Strong+Training/@-34.3394705,-58.8044087,21z/data=!3m1!4b1!4m6!3m5!1s0x95bb6164f3a49ef7:0x47acdda8d2de88e5!8m2!3d-34.3394717!4d-58.8043612!16s%2Fg%2F11y3k5qp8w?entry=ttu&g_ep=EgoyMDI1MDEyOS4wIKXMDSoASAFQAw%3D%3D";
         window.open(mapsUrl, '_blank');
     };
-
     return (
         <div
-            className="relative w-full h-96 rounded-lg overflow-hidden cursor-pointer group transition-transform duration-300 hover:scale-[1.02]"
+            className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden cursor-pointer group"
             onClick={openGoogleMaps}
         >
             {/* Iframe del mapa como background */}
@@ -19,25 +17,20 @@ export const MapComponent = ({ contactData, txt }) => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full"
+                title="Mapa de Strong Training"
             />
-
-            {/* Overlay con gradiente para mejor legibilidad */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/60 transition-all duration-300"></div>
-
             {/* Contenido superpuesto */}
-            <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white bg-black/30 backdrop-blur-sm rounded-xl p-6 border border-white/20 group-hover:bg-black/40 transition-all duration-300">
-                    {txt && <h3 className="text-xl font-semibold mb-4">{txt}</h3>}
-                    <div className="space-y-2 text-sm">
-                        <p className="font-medium">{contactData.address.street}</p>
-                        <p>{contactData.address.city}</p>
-                        <p>{contactData.phone}</p>
-                        <p>{contactData.email}</p>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="text-center text-white bg-black/30 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 group-hover:bg-black/40 transition-all duration-300">
+                    <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
+                        <p className="font-medium">Strong Training</p>
+                        <p>Santa Catalina - Dique Lujan</p>
+                        <p>Buenos Aires, Argentina</p>
+                        <p>+54 11 1234-5678</p>
+                        <p>info@strongtraining.com</p>
                     </div>
-
-                    {/* Indicador de que es clickeable */}
-                    <div className="mt-4 text-xs text-white/80 group-hover:text-white transition-colors duration-300">
+                    <div className="mt-3 sm:mt-4 text-xs text-white/80 group-hover:text-white transition-colors duration-300">
                         <span className="flex items-center justify-center space-x-1">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
