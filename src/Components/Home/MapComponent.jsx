@@ -20,26 +20,6 @@ export const MapComponent = () => {
                 className="absolute inset-0 w-full h-full"
                 title="Mapa de Strong Training"
             />
-            {/* Contenido superpuesto */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="text-center text-white bg-black/30 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 group-hover:bg-black/40 transition-all duration-300">
-                    <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                        <p className="font-medium">Strong Training</p>
-                        <p>Santa Catalina - Dique Lujan</p>
-                        <p>Buenos Aires, Argentina</p>
-                        <p>+54 11 1234-5678</p>
-                        <p>info@strongtraining.com</p>
-                    </div>
-                    <div className="mt-3 sm:mt-4 text-xs text-white/80 group-hover:text-white transition-colors duration-300">
-                        <span className="flex items-center justify-center space-x-1">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                            <span>Click para abrir en Google Maps</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };

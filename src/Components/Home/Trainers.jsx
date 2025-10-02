@@ -18,7 +18,7 @@ export const Trainers = () => {
             {/* Contenido sobre el fondo */}
             <div className="relative z-10 flex h-full">
                 {/* Lado izquierdo - Texto */}
-                <div className="flex-1 flex flex-col justify-center p-8 lg:p-16">
+                <div className="flex-1 flex flex-col justify-center p-8 lg:p-16 ">
                     <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                         Nuestros Entrenadores
                     </h2>
@@ -27,7 +27,9 @@ export const Trainers = () => {
                         Vestibulum faucibus interdum nunc, et eleifend neque sagittis sit.
                         Donec dignissim quam eu aliquet fermentum.
                     </p>
-                    <ButtonGtStrt txt="Más entrenadores" />
+                    <div className='w-fit'>
+                        <ButtonGtStrt txt="Más entrenadores" className='' />
+                    </div>
                 </div>
                 {/* Lado derecho - Imagen del trainer */}
                 <div className="flex-1 flex items-end lg:items-center justify-center p-4 sm:p-6 md:p-8">

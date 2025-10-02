@@ -25,7 +25,7 @@ export const Home = () => {
                         description="Alcanza tus objetivos con el mejor equipo de entrenadores"
                     />
                     <div className="flex justify-center px-4">
-                        <ButtonGtStrt txt="Get Started" />
+                        <ButtonGtStrt txt="Inicia con nosotros" />
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ export const Home = () => {
                     <Trainers />
                 </section>
 
-                <section className="mt-12 sm:mt-16 md:mt-20">
+                <section className="mt-25 sm:mt-16 md:mt-20">
                     <PricingSection />
                 </section>
 

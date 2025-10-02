@@ -2,7 +2,7 @@ export default function CardShape2({ icon, title }) {
     return (
         <div className='relative'>
             {/* SVG como contenedor principal de la card */}
-            <svg viewBox="0 0 700 600" className="absolute inset-0 h-[400px] md:-ml-10 -mt-12 ml-9 filter drop-shadow-lg">
+            <svg viewBox="0 0 700 600" className="absolute inset-0 h-[400px] md:mr-9 -mt-11 ml-9 filter drop-shadow-lg">
                 <defs>
                     <filter id="backdrop-blur-2" x="-50%" y="-50%" width="200%" height="200%">
                         <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
