@@ -3,25 +3,18 @@ import { CardContacto } from './CardContacto'
 
 export const InfoContacto = () => {
     return (
-        <>
-            <section>
-                <section className="py-16">
-                    <div className="">
-                        {/* Señalador */}
-                        <div className="mb-6 text-center mx-auto">
-                            <Señalador numero="1 " text="Información" className="inline-block" />
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    {/* Aquí irá el contenido de información de contacto */}
-                    <div className="">
-                        <div>
-                            <CardContacto />
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </>
+        <section className=" py-8 md:py-12">
+            <div className="max-w-7xl mx-auto">
+                {/* Señalador */}
+                <div className="mb-6 sm:mb-8 text-center lg:text-left">
+                    <Señalador numero="1" text="Información" />
+                </div>
+
+                {/* Contenido */}
+                <div className="mt-6 sm:mt-8">
+                    <CardContacto />
+                </div>
+            </div>
+        </section>
     )
 }

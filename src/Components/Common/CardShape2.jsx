@@ -1,8 +1,8 @@
 export default function CardShape2({ icon, title }) {
     return (
-        <div className='relative overflow-hidden'>
+        <div className='relative'>
             {/* SVG como contenedor principal de la card */}
-            <svg viewBox="0 0 700 600" className="absolute inset-0 h-[400px] -mt-12 ml-9 filter drop-shadow-lg">
+            <svg viewBox="0 0 700 600" className="absolute inset-0 h-[400px] md:-ml-10 -mt-12 ml-9 filter drop-shadow-lg">
                 <defs>
                     <filter id="backdrop-blur-2" x="-50%" y="-50%" width="200%" height="200%">
                         <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
@@ -31,10 +31,6 @@ export default function CardShape2({ icon, title }) {
 
                 {/* Título */}
                 <h3 className="text-white font-bold text-xl mb-2 ml-10 -mt-12">{title}</h3>
-
-                {/* <hr className="w-16 border-t-2 border-orange-500 mb-4" />
-
-                <p className="text-gray-300 text-sm leading-relaxed max-w-xs">{description}</p> */}
             </div>
         </div>
     );

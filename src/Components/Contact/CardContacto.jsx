@@ -3,31 +3,31 @@ import { ContactContent } from './ContactContent'
 export const CardContacto = () => {
     const { Contactos } = ContactContent
     return (
-        <>
-            <div className="flex justify-center items-center px-4">
-                <div className="max-w-6xl w-full rounded-lg p-8 flex items-center gap-8">
+        <div className="flex justify-center items-center px-4 sm:px-6 md:px-8">
+            <div className="max-w-6xl w-full rounded-lg p-4 sm:p-6 md:p-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {Contactos.map((Contacto) => {
                         return (
                             <div
                                 key={Contacto.id}
-                                className="p-6 bg-white hover:bg-gray-100 rounded-xl transition-colors flex flex-col items-center justify-center gap-4 flex-1 shadow-lg text-center"
+                                className="p-5 sm:p-6 bg-white hover:bg-gray-100 rounded-xl transition-colors flex flex-col items-center justify-center gap-3 sm:gap-4 shadow-lg text-center"
                             >
-                                {/* Círculo con ícono más grande - ARRIBA */}
-                                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                {/* Círculo con ícono */}
+                                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
                                     <img
                                         src={Contacto.imagen}
                                         alt={Contacto.alt}
-                                        className="w-8 h-8 text-white"
+                                        className="w-7 h-7 sm:w-8 sm:h-8 text-white"
                                     />
                                 </div>
 
-                                {/* Título - EN EL MEDIO */}
-                                <h3 className="text-lg font-semibold text-gray-900">
+                                {/* Título */}
+                                <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                                     {Contacto.nombre}
                                 </h3>
 
-                                {/* Texto - ABAJO */}
-                                <p className="text-base text-gray-600 leading-relaxed">
+                                {/* Texto */}
+                                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                                     {Contacto.texto}
                                 </p>
                             </div>
@@ -35,6 +35,6 @@ export const CardContacto = () => {
                     })}
                 </div>
             </div>
-        </>
+        </div>
     )
-}   
+}

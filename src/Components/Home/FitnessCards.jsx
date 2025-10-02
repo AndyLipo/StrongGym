@@ -28,7 +28,7 @@ export const FitnessCards = () => {
     return (
         <div className="w-full px-4 overflow-hidden">
             {/* Versión Desktop - Cards con formas SVG */}
-            <div className="hidden lg:flex flex-row max-w-6xl mx-auto items-center justify-center">
+            <div className="hidden lg:flex h-120 flex-row max-w-6xl mx-auto items-center justify-center">
                 {cards.map((card, index) => {
                     const Component = card.CardComponent;
                     return (

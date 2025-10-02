@@ -1,11 +1,8 @@
 import { ButtonGtStrt } from '../Components/Common/ButtonGtStrt'
-import { ContainerAb } from '../Components/Common/ContainerAb'
 import { Header } from '../Components/Common/Header'
 import { FitnessCards } from '../Components/Home/FitnessCards'
-import { HeroSection } from '../Components/Home/HeroSection'
 import { AboutVideoComponent } from '../Components/Home/AboutVideoComponent'
 import { MapComponent } from '../Components/Home/MapComponent'
-import { HeroText } from '../Components/Home/HeroText'
 import { Trainers } from '../Components/Home/Trainers'
 import { PricingSection } from '../Components/Home/PricingSection'
 import { SuccessStories } from '../Components/Home/SuccessStories'
@@ -15,7 +12,7 @@ export const Home = () => {
     return (
         <div className='bg-gradient-to-t from-gray-100 to-zinc-900/95 text-white min-h-screen'>
             <div className="flex flex-col">
-                <nav className="flex justify-center fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-zinc-900/80 w-full max-w-full overflow-x-hidden">
+                <nav className="flex justify-center fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-zinc-900/80 w-full">
                     <Header />
                 </nav>
 

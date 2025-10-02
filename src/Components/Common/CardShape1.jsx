@@ -1,6 +1,6 @@
 export default function CardShape1({ icon, title }) {
     return (
-        <div className='relative overflow-hidden'>
+        <div className='relative'>
             {/* SVG como contenedor principal de la card */}
             <svg viewBox="0 0 700 600" className="absolute inset-0 filter drop-shadow-lg h-[450px] -mt-20 -ml-22">
                 <defs>
