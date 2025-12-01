@@ -1,9 +1,7 @@
 import { HeroText } from './HeroText' // Asegúrate de importar las imágenes
-import Martin from '../../assets/Martin.jpg'
-import Mirta from '../../assets/Mirta.jpg'
 import { ButtonGtStrt } from '../Common/ButtonGtStrt'
+import { Link } from 'react-router-dom'
 export const Trainers = () => {
-    const { Images } = HeroText; // Obtener las imágenes
 
     return (
         <div className="relative w-full h-full">
@@ -20,15 +18,19 @@ export const Trainers = () => {
                 {/* Lado izquierdo - Texto */}
                 <div className="flex-1 flex flex-col justify-center p-8 lg:p-16 ">
                     <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                        Nuestros Entrenadores
+                        {HeroText.Trainers.TrainerTitle}
                     </h2>
                     <p className="text-white/90 text-lg mb-8 max-w-md leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum faucibus interdum nunc, et eleifend neque sagittis sit.
-                        Donec dignissim quam eu aliquet fermentum.
+                        {HeroText.Trainers.EntrenadorParagraph}
                     </p>
                     <div className='w-fit'>
-                        <ButtonGtStrt txt="Más entrenadores" className='' />
+                        <Link
+                            to={{
+                                pathname: "/SobreNosotros",
+                            }}
+                        >
+                            <ButtonGtStrt txt="Conoce los entrenadores" className='' />
+                        </Link>
                     </div>
                 </div>
                 {/* Lado derecho - Imagen del trainer */}
@@ -36,42 +38,19 @@ export const Trainers = () => {
                     <div className="relative w-full h-[180px] sm:h-[220px] md:h-[300px] lg:h-96">
 
                         {/* Layout Mobile - Horizontal en fila */}
-                        <div className="flex lg:hidden justify-center items-end gap-3 sm:gap-4 h-full pb-4 mt-40 -ml-75">
-                            {/* Card Claudio */}
-                            <div className="group cursor-pointer transform hover:scale-110 transition-all duration-500">
-                                <div className="relative w-23 h-36 sm:w-32 sm:h-40 rounded-xl overflow-hidden bg-cover bg-center shadow-xl"
-                                    style={{ backgroundImage: `url(${Martin})` }}>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                                    <div className="absolute bottom-2 left-2 text-white">
-                                        <h3 className="text-sm font-bold">Claudio</h3>
-                                        <p className="text-zinc-200 text-xs">Entrenador</p>
+                        <div className="flex flex-col lg:hidden justify-center items-end gap-3 sm:gap-4 h-full pb-4 -mt-30 -ml-75">
+                            {HeroText.Trainers.ImgTrain.map((trainer) => (
+                                <div key={trainer.id} className="group cursor-pointer transform hover:scale-110 transition-all duration-500">
+                                    <div className="relative w-23 h-36 sm:w-32 sm:h-40 rounded-xl overflow-hidden bg-cover bg-center shadow-xl"
+                                        style={{ backgroundImage: `url(${trainer.image})` }}>
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                        <div className="absolute bottom-2 left-2 text-white">
+                                            <h3 className="text-sm font-bold">{trainer.name}</h3>
+                                            <p className="text-zinc-200 text-xs">{trainer.role}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            {/* Card Martin */}
-                            <div className="group cursor-pointer transform hover:scale-110 transition-all duration-500">
-                                <div className="relative w-23 h-36 sm:w-32 sm:h-40 rounded-xl overflow-hidden bg-cover bg-center shadow-xl"
-                                    style={{ backgroundImage: `url(${Martin})` }}>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                                    <div className="absolute bottom-2 left-2 text-white">
-                                        <h3 className="text-sm font-bold">Martin</h3>
-                                        <p className="text-zinc-200 text-xs">Entrenador</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Card Mirta */}
-                            <div className="group cursor-pointer transform hover:scale-110 transition-all duration-500">
-                                <div className="relative w-23 h-36 sm:w-32 sm:h-40 rounded-xl overflow-hidden bg-cover bg-center shadow-xl"
-                                    style={{ backgroundImage: `url(${Mirta})` }}>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
-                                    <div className="absolute bottom-2 left-2 text-white">
-                                        <h3 className="text-sm font-bold">Mirta</h3>
-                                        <p className="text-zinc-200 text-xs">Especialista</p>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
 
                         {/* Layout Desktop - Superpuestas original */}
@@ -79,11 +58,11 @@ export const Trainers = () => {
                             {/* Card Claudio (atrás) */}
                             <div className="absolute bottom-32 -left-24 z-10 group cursor-pointer transform -rotate-2">
                                 <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
-                                    style={{ backgroundImage: `url(${Martin})` }}>
+                                    style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[2].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">Claudio</h3>
-                                        <p className="text-zinc-200 text-base">Entrenador Personal</p>
+                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[2].name}</h3>
+                                        <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[2].role}</p>
                                     </div>
                                 </div>
                             </div>
@@ -91,11 +70,11 @@ export const Trainers = () => {
                             {/* Card Martin (centro) */}
                             <div className="absolute top-0 left-12 z-10 group cursor-pointer transform -rotate-2">
                                 <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
-                                    style={{ backgroundImage: `url(${Martin})` }}>
+                                    style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[1].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">Martin</h3>
-                                        <p className="text-zinc-200 text-base">Entrenador Personal</p>
+                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[1].name}</h3>
+                                        <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[1].role}</p>
                                     </div>
                                 </div>
                             </div>
@@ -103,11 +82,11 @@ export const Trainers = () => {
                             {/* Card Mirta (adelante) */}
                             <div className="absolute top-12 -right-5 z-20 group cursor-pointer transform rotate-2">
                                 <div className="relative w-72 h-80 rounded-3xl overflow-hidden bg-cover bg-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:z-30 shadow-2xl"
-                                    style={{ backgroundImage: `url(${Mirta})` }}>
+                                    style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[0].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">Mirta</h3>
-                                        <p className="text-zinc-200 text-base">Especialista Fitness</p>
+                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[0].name}</h3>
+                                        <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[0].role}</p>
                                     </div>
                                 </div>
                             </div>

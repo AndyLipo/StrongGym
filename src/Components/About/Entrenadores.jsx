@@ -1,5 +1,6 @@
 import { Señalador } from "../Common/Señalador"
 import { AboutContent } from "./AboutContent"
+import { HeroText } from "../Home/HeroText"
 
 export const Entrenadores = () => {
     const { Entrenadores } = AboutContent
@@ -11,7 +12,7 @@ export const Entrenadores = () => {
             </section>
             <section className="px-4 sm:px-6 md:px-8 lg:px-12">
                 <section className="flex justify-center lg:justify-start mb-8 md:mb-12">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider text-black text-center lg:text-left">
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider text-white text-center lg:text-left">
                         {Entrenadores.titulo}
                     </h3>
                 </section>
@@ -19,6 +20,11 @@ export const Entrenadores = () => {
                 <div className="space-y-8 sm:space-y-10 md:space-y-12">
                     {Entrenadores.CardEntrenadores.map((CardEntrenador, index) => {
                         const esImpar = index % 2 !== 0;
+                        // Buscar la imagen correspondiente del entrenador en HeroText
+                        const trainerImage = HeroText.Trainers.ImgTrain.find(
+                            trainer => trainer.id === CardEntrenador.id
+                        );
+
                         return (
                             <section
                                 key={CardEntrenador.id}
@@ -26,12 +32,15 @@ export const Entrenadores = () => {
                             >
                                 <div className="w-full lg:flex-1">
                                     <img
-                                        src={CardEntrenador.imagen}
+                                        src={trainerImage?.image || CardEntrenador.imagen}
                                         alt={CardEntrenador.alt}
                                         className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[300px] sm:max-h-[400px] lg:max-h-none"
                                     />
                                 </div>
                                 <div className="w-full lg:flex-1">
+                                    <h4 className="text-3xl sm:text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 text-center lg:text-left">
+                                        {trainerImage?.name}
+                                    </h4>
                                     <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-center lg:text-left">
                                         {CardEntrenador.texto}
                                     </p>

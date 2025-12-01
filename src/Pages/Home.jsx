@@ -8,28 +8,42 @@ import { PricingSection } from '../Components/Home/PricingSection'
 import { SuccessStories } from '../Components/Home/SuccessStories'
 import { Footer } from '../Components/Common/Footer'
 import { HeroContent } from '../Components/Home/HeroContent'
+import StrongTrainingLogo from '../Components/Common/StrongTrainingLogo'
+import { WhatsAppBtn } from '../Components/Common/Icons/WhatsAppBtn'
+
 export const Home = () => {
     return (
-        <div className='bg-gradient-to-t from-gray-100 to-zinc-900/95 text-white min-h-screen'>
+        <div className='bg-gradient-to-br from-black via-zinc-900 to-zinc-700 text-white min-h-screen'>
             <div className="flex flex-col">
                 <nav className="flex justify-center fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-zinc-900/80 w-full">
                     <Header />
                 </nav>
 
                 <div className='flex flex-col gap-6 sm:gap-8 md:gap-12 mt-20 sm:mt-24'>
-                    <HeroContent
-                        prefix="TRANSFORMA"
-                        highlight="TU CUERPO"
-                        suffix="CON"
-                        highlight2="NOSOTROS"
-                        description="Alcanza tus objetivos con el mejor equipo de entrenadores"
-                    />
-                    <div className="flex justify-center px-4">
-                        <ButtonGtStrt txt="Inicia con nosotros" />
+                    {/* Hero Section con Logo y Contenido en paralelo */}
+                    <div className='flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 gap-8 lg:gap-12'>
+                        {/* Contenido a la izquierda */}
+                        <div className='flex-1 w-full lg:w-1/2'>
+                            <HeroContent
+                                prefix="TRANSFORMA"
+                                highlight="TU CUERPO"
+                                suffix="CON"
+                                highlight2="NOSOTROS"
+                                description="Alcanza tus objetivos con el mejor equipo de entrenadores"
+                            />
+                            <div className="flex justify-center lg:justify-start mt-6">
+                                <ButtonGtStrt txt="Inicia con nosotros" />
+                            </div>
+                        </div>
+
+                        {/* Logo a la derecha */}
+                        <div className='flex-1 w-full lg:w-1/2 flex items-center justify-center'>
+                            <StrongTrainingLogo />
+                        </div>
                     </div>
                 </div>
 
-                <div className="mt-12 sm:mt-16 md:mt-24">
+                <div className="mt-12 sm:mt-16 md:mt-10">
                     <FitnessCards />
                 </div>
 
@@ -53,8 +67,8 @@ export const Home = () => {
 
                 <section className="mt-12 sm:mt-16 md:mt-20 px-4 md:px-8">
                     <div className="mb-6 sm:mb-8 text-center">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">
-                            Sos bienvenido a <span className="text-[#FF8C00]">Unirnos!</span>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">
+                            Sos bienvenido a <span className="text-[#FF8C00]">Unirte!</span>
                         </h2>
                     </div>
 
@@ -64,7 +78,11 @@ export const Home = () => {
                         </div>
                     </div>
                 </section>
-
+                <section>
+                    <div>
+                        <WhatsAppBtn />
+                    </div>
+                </section>
                 <Footer />
             </div>
         </div>

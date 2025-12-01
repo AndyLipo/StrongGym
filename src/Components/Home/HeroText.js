@@ -1,4 +1,9 @@
 import imgAbout from '../../assets/imgAbout.webp'
+import ImgMartin from '../../assets/MartinFinal.webp'
+import ImgMirta from '../../assets/MirtaEntrenadora.webp'
+import ImgClaudio from '../../assets/ClaudioEntrenador2.webp'
+import ImgMaria from '../../assets/TestimonioM1.webp'
+import ImgJuan from '../../assets/TestimonioH1.webp'
 
 export const HeroText = {
     content: {
@@ -152,5 +157,85 @@ export const HeroText = {
                 },
             ]
         }
+    },
+    Trainers: {
+        TrainerTitle: "Nuestros Entrenadores",
+        EntrenadorParagraph: "Conoce nuestros profesionales. Su historia y formacion profesional, de que manera te pueden favorecer para transoformar tu cuerpo y calidad de vida",
+        ImgTrain: [
+            {
+                id: 1,
+                name: "Mirta",
+                image: ImgMirta,
+            },
+            {
+                id: 2,
+                name: "Martin",
+                image: ImgMartin,
+            },
+            {
+                id: 3,
+                name: "Claudio",
+                image: ImgClaudio,
+            },
+        ]
+    },
+    PrincingPlans: {
+        title: "Planes de Precios",
+        subtitle: "Elige el plan perfecto para ti",
+        amenities: [
+            {
+                plan: 'Salón',
+                description: 'Perfecto para empezar',
+                price: '$ Consultar',
+                features: ['Acceso al gimnasio', 'Orientación de profesionales', 'Baños'],
+                isPopular: false
+            },
+            {
+                plan: 'Con Entrenador',
+                description: 'Lo más recomendado',
+                price: '$ Consultar',
+                features: ['Todo el plan Salón', 'Entrenador personal', 'Plan personalizado', 'Seguimiento', 'Nutrición'],
+                isPopular: true
+            }
+        ]
+    },
+    SuccessStories: {
+        title: "Historias de",
+        highlight: "Éxito",
+        subtitle: "Testimonios reales de nuestros miembros",
+        stories: [
+            {
+                id: 1,
+                name: 'María García',
+                rating: 5,
+                testimonial: 'Increíble transformación en 3 meses',
+                image: ImgMaria, // Para cuando quieras agregar imágenes reales
+                alt: 'Imagen testimonio Maria Garcia'
+            },
+            {
+                id: 2,
+                name: 'Juan Pérez',
+                rating: 5,
+                testimonial: 'Los mejores entrenadores que he tenido',
+                image: ImgJuan,
+                alt: 'Imagen testimonio Juan Pérez'
+            },
+            {
+                id: 3,
+                name: 'Ana López',
+                rating: 4,
+                testimonial: 'Excelente ambiente y equipamiento',
+                image: '/path/to/ana.jpg',
+                alt: 'Imagen testimonio Ana López'
+            },
+            {
+                id: 4,
+                name: 'Carlos Ruiz',
+                rating: 5,
+                testimonial: 'Cambió completamente mi vida',
+                image: '/path/to/carlos.jpg',
+                alt: 'Imagen testimonio Carlos Ruiz'
+            }
+        ]
     }
 }

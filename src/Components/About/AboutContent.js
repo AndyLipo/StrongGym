@@ -1,5 +1,8 @@
 import VideoDumbell from '../../assets/HeroVideo.mp4' // Ajusta la ruta según tu estructura
-
+import Atras1 from '../../assets/Atras1.webp'
+import SalonFoto from '../../assets/SalonFoto.webp'
+import Spinnin2 from '../../assets/Spinnin2.webp'
+import Spinning from '../../assets/Spinning.webp'
 export const AboutContent = {
     heroVideo: VideoDumbell,
     title: "Entrena con Nosotros",
@@ -15,21 +18,18 @@ export const AboutContent = {
         CardEntrenadores: [
             {
                 id: 1,
-                imagen: "https://dummyimage.com/200x200/000/fff&text=Entrenador+1",
                 texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
-                alt: "Descripción 1"
+                alt: "Foto de Mirta"
             },
             {
                 id: 2,
-                imagen: "https://dummyimage.com/200x200/000/fff&text=Entrenador2",
                 texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
-                alt: "Descripción 2"
+                alt: "Foto de Martin"
             },
             {
                 id: 3,
-                imagen: "https://dummyimage.com/200x200/000/fff&text=Entrenador3",
                 texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
-                alt: "Descripción 3"
+                alt: "Foto de Caludio"
             }
         ]
     },
@@ -39,22 +39,22 @@ export const AboutContent = {
         Equipamientos: [
             {
                 id: 1,
-                imagen: "https://dummyimage.com/150x100/000/fff&text=Instalaciones",
+                imagen: Atras1,
                 alt: "Instalaciones"
             },
             {
                 id: 2,
-                imagen: "https://dummyimage.com/150x100/000/fff&text=Instalaciones",
+                imagen: SalonFoto,
                 alt: "Instalaciones"
             },
             {
                 id: 3,
-                imagen: "https://dummyimage.com/150x100/000/fff&text=Instalaciones",
+                imagen: Spinning,
                 alt: "Instalaciones"
             },
             {
                 id: 4,
-                imagen: "https://dummyimage.com/150x100/000/fff&text=Instalaciones",
+                imagen: Spinnin2,
                 alt: "Instalaciones"
             },
         ],

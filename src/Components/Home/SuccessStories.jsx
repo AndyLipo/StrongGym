@@ -1,11 +1,6 @@
-export const SuccessStories = () => {
-    const stories = [
-        { id: 1, name: 'María García', rating: 5, testimonial: 'Increíble transformación en 3 meses' },
-        { id: 2, name: 'Juan Pérez', rating: 5, testimonial: 'Los mejores entrenadores que he tenido' },
-        { id: 3, name: 'Ana López', rating: 4, testimonial: 'Excelente ambiente y equipamiento' },
-        { id: 4, name: 'Carlos Ruiz', rating: 5, testimonial: 'Cambió completamente mi vida' }
-    ];
+import { HeroText } from './HeroText';
 
+export const SuccessStories = () => {
     const renderStars = (rating) => {
         return Array.from({ length: 5 }, (_, index) => (
             <svg
@@ -29,20 +24,29 @@ export const SuccessStories = () => {
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8">
                 <div className="text-start mb-8 sm:mb-12 md:mb-16">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
-                        Historias de <span className="text-orange-500">Éxito</span>
+                        {HeroText.SuccessStories.title} <span className="text-orange-500">{HeroText.SuccessStories.highlight}</span>
                     </h2>
-                    <p className="text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl ">
-                        Testimonios reales de nuestros miembros
+                    <p className="text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl">
+                        {HeroText.SuccessStories.subtitle}
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                    {stories.map((story) => (
+                    {HeroText.SuccessStories.stories.map((story) => (
                         <div
                             key={story.id}
                             className="bg-black/80 backdrop-blur-sm rounded-lg overflow-hidden border border-zinc-800 hover:border-orange-500/50 transition-all duration-300 hover:scale-105"
                         >
-                            <div className="relative h-48 sm:h-56 md:h-64 bg-gray-700">
+                            <div className="relative h-48 sm:h-56 md:h-64 bg-gray-700 overflow-hidden">
+                                <picture>
+                                    <source srcSet={story.image} type="image/webp" />
+                                    <img
+                                        src={story.image}
+                                        alt={story.alt}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </picture>
+
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                 <div className="absolute bottom-4 left-4">
                                     <h3 className="text-white font-bold text-lg sm:text-xl">

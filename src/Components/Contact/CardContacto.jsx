@@ -7,6 +7,8 @@ export const CardContacto = () => {
             <div className="max-w-6xl w-full rounded-lg p-4 sm:p-6 md:p-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {Contactos.map((Contacto) => {
+                        const IconComponent = Contacto.icon;
+
                         return (
                             <div
                                 key={Contacto.id}
@@ -14,11 +16,15 @@ export const CardContacto = () => {
                             >
                                 {/* Círculo con ícono */}
                                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <img
-                                        src={Contacto.imagen}
-                                        alt={Contacto.alt}
-                                        className="w-7 h-7 sm:w-8 sm:h-8 text-white"
-                                    />
+                                    {IconComponent ? (
+                                        <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                                    ) : (
+                                        <img
+                                            src={Contacto.imagen}
+                                            alt={Contacto.alt}
+                                            className="w-7 h-7 sm:w-8 sm:h-8"
+                                        />
+                                    )}
                                 </div>
 
                                 {/* Título */}

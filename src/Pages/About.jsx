@@ -4,11 +4,14 @@ import { Historia } from "../Components/About/Historia"
 import { Instalaciones } from "../Components/About/Instalaciones"
 import { Logros } from "../Components/About/Logros"
 import { Testimonio } from "../Components/About/Testimonio"
+import { Footer } from "../Components/Common/Footer"
 import { Header } from "../Components/Common/Header"
+import { WhatsAppBtn } from "../Components/Common/Icons/WhatsAppBtn"
+
 
 export const About = () => {
     return (
-        <div className='bg-gradient-to-t from-gray-100 to-zinc-900/95 text-white min-h-screen'>
+        <div className='bg-gradient-to-br from-black via-zinc-900 to-zinc-700 text-white min-h-screen'>
             <div className="flex flex-col">
                 <nav className="flex justify-center fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-zinc-900/80 w-full">
                     <Header />
@@ -31,6 +34,14 @@ export const About = () => {
             </section>
             <section>
                 <Logros />
+            </section>
+            <section>
+                <div>
+                    <WhatsAppBtn />
+                </div>
+            </section>
+            <section>
+                <Footer />
             </section>
         </div>
     )

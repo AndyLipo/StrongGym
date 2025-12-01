@@ -1,26 +1,30 @@
+import { PhoneIcon } from '../../Components/Common/Icons/PhoneIcon'
+import { WhatsApp } from '../../Components/Common/Icons/WhatsApp.jsx'
+import { Gmaps } from '../../Components/Common/Icons/Gmaps.jsx'
+
 export const ContactContent = {
     //Card Contacto
     Contactos: [
         {
             id: 1,
             nombre: "Llamanos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto1",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+            icon: PhoneIcon,
+            alt: "Numero de celular, llamanos",
+            texto: "Podes llamarnos al numero + 54 9 3484 37-8204 y te responderemos a la brevedad."
         },
         {
             id: 2,
             nombre: "Visitanos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto2",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+            icon: Gmaps,
+            alt: "Logo de google maps",
+            texto: "Nos encontramos en Juan P. Asborno 1650, B1625 Belén de Escobar, Provincia de Buenos Aires, nuestros horarios se encuentran más abajo."
         },
         {
             id: 3,
             nombre: "Escribenos",
-            imagen: "https://dummyimage.com/150x100/000/fff&text=Foto3",
-            alt: "Foto del testimonio 2 - imagen 2",
-            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+            icon: WhatsApp,
+            alt: "WhatsApp, escribenos",
+            texto: "Podes contactarnos a través de WhatsApp en el boton de abajo a la derecha, sino a traves de nuestro formulario de consultas."
         },
     ],
     //Horarios
@@ -29,17 +33,16 @@ export const ContactContent = {
             id: 1,
             tipo: "Días de Semana",
             items: [
-                { label: "Lunes a Viernes", valor: "8:00 AM - 11:00 PM" },
-                { label: "Horario extendido", valor: "17 horas de servicio" }
+                { label: "Lunes a Viernes", valor: "7:00 AM - 9:00 PM" },
+                { label: "Horario extendido", valor: "14 horas de servicio" }
             ]
         },
         {
             id: 2,
-            tipo: "Fines de Semana",
+            tipo: "Fin de Semana",
             items: [
-                { label: "Sábados", valor: "7:00 AM - 2:00 PM" },
-                { label: "Domingos", valor: "8:00 AM - 8:00 PM" },
-                { label: "Acceso 24/7", valor: "Mientras Premium", destacado: true }
+                { label: "Sábados", valor: "8:00 AM - 12:00 PM" },
+                { label: "Domingos", valor: "Cerrado" }
             ]
         }
     ],

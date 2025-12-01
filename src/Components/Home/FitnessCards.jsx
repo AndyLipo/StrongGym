@@ -20,7 +20,7 @@ export const FitnessCards = () => {
         },
         {
             icon: Dieta,
-            title: "Dieta",
+            title: "Guía de alimentación",
             CardComponent: CardShape3
         }
     ]
