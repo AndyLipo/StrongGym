@@ -61,11 +61,16 @@ export const Home = () => {
                     <PricingSection />
                 </section>
 
-                <section className="mt-12 sm:mt-16 md:mt-20">
+                {/* <section className="mt-12 sm:mt-16 md:mt-20">
                     <SuccessStories />
-                </section>
+                </section> */}
 
-                <section className="mt-12 sm:mt-16 md:mt-20 px-4 md:px-8">
+                <section className="relative mt-12 sm:mt-16 md:mt-20 px-4 md:px-8 pb-12">
+                    {/* Fondo */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900"></div>
+                    <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full bg-gradient-to-br from-orange-500 to-orange-600"
+                        style={{ clipPath: 'polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)' }}>
+                    </div>
                     <div className="mb-6 sm:mb-8 text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">
                             Sos bienvenido a <span className="text-[#FF8C00]">Unirte!</span>
