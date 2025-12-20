@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import { Señalador } from '../Common/Señalador'
 import { AboutContent } from './AboutContent'
 
@@ -8,7 +8,7 @@ export const Logros = () => {
     return (
         <>
             <section className="mb-6 text-center mx-auto">
-                <Señalador numero="5 " text="Logros" className="inline-block" />
+                <Señalador numero="4 " text="Logros" className="inline-block" />
             </section>
 
             <section className="bg-gray-950 py-16 mt-10">
@@ -62,7 +62,7 @@ export const Logros = () => {
             <section className="bg-gradient-to-r from-orange-300 to-orange-500 py-16">
                 <div className=" mx-auto  text-center">
                     <div className="mb-6">
-                        <Señalador numero="6 " text="CTA" className="inline-block" />
+                        <Señalador numero="5 " text="Call To Action" className="inline-block" />
                     </div>
 
                     <h2 className="text-white text-4xl md:text-5xl font-bold mb-8">
@@ -70,9 +70,11 @@ export const Logros = () => {
                     </h2>
 
                     <div className="max-w-md mx-auto">
-                        <button className="w-full bg-white text-orange-500 font-bold text-xl py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
-                            {Logros.cta.botonTexto}
-                        </button>
+                        <Link to="/contacto#contact-form">
+                            <button className="w-full bg-white text-orange-500 font-bold text-xl py-4 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+                                {Logros.cta.botonTexto}
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>

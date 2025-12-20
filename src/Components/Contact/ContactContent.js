@@ -17,14 +17,17 @@ export const ContactContent = {
             nombre: "Visitanos",
             icon: Gmaps,
             alt: "Logo de google maps",
-            texto: "Nos encontramos en Juan P. Asborno 1650, B1625 Belén de Escobar, Provincia de Buenos Aires, nuestros horarios se encuentran más abajo."
+            texto: "Nos encontramos en Juan P. Asborno 1650, B1625 Belén de Escobar, Provincia de Buenos Aires, nuestros horarios se encuentran más abajo.",
+            link: "https://www.google.com/maps/place/Strong+Training/@-34.3394705,-58.8044087,21z/data=!3m1!4b1!4m6!3m5!1s0x95bb6164f3a49ef7:0x47acdda8d2de88e5!8m2!3d-34.3394717!4d-58.8043612!16s%2Fg%2F11y3k5qp8w?entry=ttu&g_ep=EgoyMDI1MDEyOS4wIKXMDSoASAFQAw%3D%3D",
+            linkType: "external"
         },
         {
             id: 3,
             nombre: "Escribenos",
             icon: WhatsApp,
             alt: "WhatsApp, escribenos",
-            texto: "Podes contactarnos a través de WhatsApp en el boton de abajo a la derecha, sino a traves de nuestro formulario de consultas."
+            texto: "Podes contactarnos a través de WhatsApp en el boton de abajo a la derecha, sino a traves de nuestro formulario de consultas.",
+            link: "https://wa.me/5493484378204?text=¡Hola!%20Me%20gustaría%20hacer%20una%20consulta%20sobre..."
         },
     ],
     //Horarios

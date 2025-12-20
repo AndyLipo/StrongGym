@@ -9,10 +9,20 @@ export const CardContacto = () => {
                     {Contactos.map((Contacto) => {
                         const IconComponent = Contacto.icon;
 
+                        // Determinar si tiene link
+                        const hasLink = Contacto.link;
+                        const CardWrapper = hasLink ? 'a' : 'div';
+                        const linkProps = hasLink ? {
+                            href: Contacto.link,
+                            target: "_blank",
+                            rel: "noopener noreferrer"
+                        } : {};
+
                         return (
-                            <div
+                            <CardWrapper
                                 key={Contacto.id}
-                                className="p-5 sm:p-6 bg-white hover:bg-gray-100 rounded-xl transition-colors flex flex-col items-center justify-center gap-3 sm:gap-4 shadow-lg text-center"
+                                {...linkProps}
+                                className={`p-5 sm:p-6 bg-white hover:bg-gray-100 rounded-xl transition-colors flex flex-col items-center justify-center gap-3 sm:gap-4 shadow-lg text-center ${hasLink ? 'cursor-pointer' : ''}`}
                             >
                                 {/* Círculo con ícono */}
                                 <div className="w-14 h-14 sm:w-16 sm:h-16 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -36,7 +46,7 @@ export const CardContacto = () => {
                                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                                     {Contacto.texto}
                                 </p>
-                            </div>
+                            </CardWrapper>
                         )
                     })}
                 </div>

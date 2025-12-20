@@ -6,7 +6,6 @@ import { HeroContact } from '../Components/Contact/HeroContact'
 import { Horarios } from '../Components/Contact/Horarios'
 import { InfoContacto } from '../Components/Contact/InfoContacto'
 
-
 export const Contact = () => {
     return (
         <>

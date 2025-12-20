@@ -1,0 +1,14 @@
+
+# robots.txt para strongtraining.com.ar
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://strongtraining.com.ar/sitemap.xml
+
+# Bloquear archivos innecesarios
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /build/
+Disallow: /node_modules/

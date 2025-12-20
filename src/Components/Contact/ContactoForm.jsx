@@ -1,10 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Señalador } from '../Common/Señalador'
 import { ContactContent } from './ContactContent'
+import { useLocation } from 'react-router-dom'
 
 export const ContactoForm = () => {
     const [formStatus, setFormStatus] = useState(null)
+    const location = useLocation()
 
+    // Scroll al formulario si hay hash en la URL
+    useEffect(() => {
+        if (location.hash === '#contact-form') {
+            const element = document.getElementById('contact-form')
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }, 100)
+            }
+        }
+    }, [location])
     const handleSubmit = async (e) => {
         e.preventDefault()
         const form = e.target
@@ -49,10 +62,11 @@ export const ContactoForm = () => {
             <section className='flex justify-center max-w-7xl'>
                 <div className='bg-white rounded-xl sm:rounded-2xl shadow-lg px-4 sm:px-8 md:px-8'>
                     <form
-                        action="https://formspree.io/f/mdkwerqb"
+                        action="https://formspree.io/f/xpwvgegq"
                         method="POST"
                         onSubmit={handleSubmit}
                         className='p-10'
+                        id='contact-form'
                     >
                         {/* Fila 1: Nombre y Email */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">

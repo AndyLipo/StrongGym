@@ -5,11 +5,12 @@ import { AboutVideoComponent } from '../Components/Home/AboutVideoComponent'
 import { MapComponent } from '../Components/Home/MapComponent'
 import { Trainers } from '../Components/Home/Trainers'
 import { PricingSection } from '../Components/Home/PricingSection'
-import { SuccessStories } from '../Components/Home/SuccessStories'
+// import { SuccessStories } from '../Components/Home/SuccessStories'
 import { Footer } from '../Components/Common/Footer'
 import { HeroContent } from '../Components/Home/HeroContent'
-import StrongTrainingLogo from '../Components/Common/StrongTrainingLogo'
 import { WhatsAppBtn } from '../Components/Common/Icons/WhatsAppBtn'
+import StrongTrainingLogo2 from '../Components/Home/StrongTrainingLogo2'
+import '../Components/Home/CircularText.css'
 
 export const Home = () => {
     return (
@@ -38,7 +39,18 @@ export const Home = () => {
 
                         {/* Logo a la derecha */}
                         <div className='flex-1 w-full lg:w-1/2 flex items-center justify-center'>
-                            <StrongTrainingLogo />
+                            <StrongTrainingLogo2
+                                segments={[
+                                    { text: "STRONG*", color: "#FF8C00" },  // naranja
+                                    { text: "TRAI", color: "#FFFFFF" }, // blanco
+                                    { text: "NING*", color: "#FF8C00" },      // naranja
+                                    { text: "GYM*", color: "#FFFFFF" }, // blanco
+                                ]}
+                                onHover="speedUp"
+                                spinDuration={25}
+                                className="custom-class"
+
+                            />
                         </div>
                     </div>
                 </div>

@@ -29,9 +29,9 @@ export const About = () => {
             <section>
                 <Instalaciones />
             </section>
-            <section>
+            {/* <section>
                 <Testimonio />
-            </section>
+            </section> */}
             <section>
                 <Logros />
             </section>

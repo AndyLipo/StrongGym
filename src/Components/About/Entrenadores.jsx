@@ -41,7 +41,7 @@ export const Entrenadores = () => {
                                     <h4 className="text-3xl sm:text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 text-center lg:text-left">
                                         {trainerImage?.name}
                                     </h4>
-                                    <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-center lg:text-left">
+                                    <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed text-center lg:text-left">
                                         {CardEntrenador.texto}
                                     </p>
                                 </div>

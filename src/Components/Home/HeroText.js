@@ -1,9 +1,8 @@
 import imgAbout from '../../assets/imgAbout.webp'
 import ImgMartin from '../../assets/MartinFinal.webp'
-import ImgMirta from '../../assets/MirtaEntrenadora.webp'
+import ImgMirta from '../../assets/MirtaEntrenadora2.webp'
 import ImgClaudio from '../../assets/ClaudioEntrenador2.webp'
-import ImgMaria from '../../assets/TestimonioM1.webp'
-import ImgJuan from '../../assets/TestimonioH1.webp'
+
 
 export const HeroText = {
     content: {
@@ -164,17 +163,17 @@ export const HeroText = {
         ImgTrain: [
             {
                 id: 1,
-                name: "Mirta",
+                name: "Mirta Alvez",
                 image: ImgMirta,
             },
             {
                 id: 2,
-                name: "Martin",
+                name: "Martin Oyhanart",
                 image: ImgMartin,
             },
             {
                 id: 3,
-                name: "Claudio",
+                name: "Claudio Rodriguez",
                 image: ImgClaudio,
             },
         ]
@@ -204,38 +203,38 @@ export const HeroText = {
         highlight: "Éxito",
         subtitle: "Testimonios reales de nuestros miembros",
         stories: [
-            {
-                id: 1,
-                name: 'María García',
-                rating: 5,
-                testimonial: 'Increíble transformación en 3 meses',
-                image: ImgMaria, // Para cuando quieras agregar imágenes reales
-                alt: 'Imagen testimonio Maria Garcia'
-            },
-            {
-                id: 2,
-                name: 'Juan Pérez',
-                rating: 5,
-                testimonial: 'Los mejores entrenadores que he tenido',
-                image: ImgJuan,
-                alt: 'Imagen testimonio Juan Pérez'
-            },
-            {
-                id: 3,
-                name: 'Ana López',
-                rating: 4,
-                testimonial: 'Excelente ambiente y equipamiento',
-                image: '/path/to/ana.jpg',
-                alt: 'Imagen testimonio Ana López'
-            },
-            {
-                id: 4,
-                name: 'Carlos Ruiz',
-                rating: 5,
-                testimonial: 'Cambió completamente mi vida',
-                image: '/path/to/carlos.jpg',
-                alt: 'Imagen testimonio Carlos Ruiz'
-            }
+            // {
+            //     id: 1,
+            //     name: 'María García',
+            //     rating: 5,
+            //     testimonial: 'Increíble transformación en 3 meses',
+            //     image: , // Para cuando quieras agregar imágenes reales
+            //     alt: 'Imagen testimonio Maria Garcia'
+            // },
+            // {
+            //     id: 2,
+            //     name: 'Juan Pérez',
+            //     rating: 5,
+            //     testimonial: 'Los mejores entrenadores que he tenido',
+            //     image: ImgJuan,
+            //     alt: 'Imagen testimonio Juan Pérez'
+            // },
+            // {
+            //     id: 3,
+            //     name: 'Ana López',
+            //     rating: 4,
+            //     testimonial: 'Excelente ambiente y equipamiento',
+            //     image: '/path/to/ana.jpg',
+            //     alt: 'Imagen testimonio Ana López'
+            // },
+            // {
+            //     id: 4,
+            //     name: 'Carlos Ruiz',
+            //     rating: 5,
+            //     testimonial: 'Cambió completamente mi vida',
+            //     image: '/path/to/carlos.jpg',
+            //     alt: 'Imagen testimonio Carlos Ruiz'
+            // }
         ]
     }
 }

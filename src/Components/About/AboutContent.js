@@ -18,17 +18,23 @@ export const AboutContent = {
         CardEntrenadores: [
             {
                 id: 1,
-                texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
+                texto: `Profesional certificado por Radical Fitness en múltiples programas: Top Ride (Indoor Cycling), Step Cardio Training, UBOND (Mini Trampolín) y Aerobics. 
+                Egresado como Personal Trainer de Fitness y Musculación Argentina (FMA), con experiencia competitiva en NPC Internacional.
+                Actualmente ofrece sesiones de entrenamiento personalizado presencial, diseñadas específicamente para alcanzar tus metas fitness.`,
                 alt: "Foto de Mirta"
             },
             {
                 id: 2,
-                texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
+                texto: `Profesional certificado como Personal Trainer por el Centro Europeo de Educación Física, con trayectoria competitiva en fisicoculturismo.
+                Especializado en asesoramiento online, ofreciendo planificación de entrenamiento personalizado y guías de alimentación saludable adaptadas a cada objetivo.
+                Acompaño a mis clientes en su transformación física desde cualquier lugar, combinando experiencia práctica con conocimiento técnico profesional.`,
                 alt: "Foto de Martin"
             },
             {
                 id: 3,
-                texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reiciendis repellendus. Totam, nostrum architecto quisquam quos, perferendis culpa voluptate accusantium quasi maxime assumenda temporibus fugit beatae libero est! Excepturi, dolorem?",
+                texto: `Personal Trainer certificado por CA.DE.FI (Centro Argentino de Educación Física).
+                Especializado en entrenamiento presencial dentro del gimnasio, brindando acompañamiento profesional y personalizado para ayudarte a alcanzar tus objetivos fitness.
+                Con enfoque práctico y dedicado, diseña rutinas adaptadas a las necesidades individuales de cada cliente.`,
                 alt: "Foto de Caludio"
             }
         ]
@@ -92,7 +98,7 @@ export const AboutContent = {
     // Agregar esto al AboutContent en el mismo nivel que "Instalaciones"
     Logros: {
         anosExperiencia: {
-            numero: "10+",
+            numero: "5+",
             texto: "Años de experiencia"
         },
         miembrosTransformados: {
@@ -104,7 +110,7 @@ export const AboutContent = {
             texto: "Entrenadores certificados"
         },
         accesoGimnasio: {
-            numero: "24/7",
+            numero: "Lun a Sab",
             texto: "Acceso al gimnasio"
         },
         cta: {
