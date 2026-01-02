@@ -34,18 +34,18 @@ export const ContactContent = {
     Horarios: [
         {
             id: 1,
-            tipo: "Días de Semana",
+            tipo: "Horario de Invierno",
             items: [
                 { label: "Lunes a Viernes", valor: "7:00 AM - 9:00 PM" },
-                { label: "Horario extendido", valor: "14 horas de servicio" }
+                { label: "Sábado", valor: "8:00 AM - 12:00 PM" }
             ]
         },
         {
             id: 2,
-            tipo: "Fin de Semana",
+            tipo: "Horario de Verano",
             items: [
-                { label: "Sábados", valor: "8:00 AM - 12:00 PM" },
-                { label: "Domingos", valor: "Cerrado" }
+                { label: "Lunes a Viernes", valor: "7:00 AM - 9:00 PM" },
+                { label: "Sábado", valor: "7:00 AM - 11:00 AM" }
             ]
         }
     ],

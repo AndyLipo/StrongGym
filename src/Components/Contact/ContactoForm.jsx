@@ -49,7 +49,7 @@ export const ContactoForm = () => {
                 <section>
                     {/* Señalador */}
                     <div className="mb-6 sm:mb-8 text-center lg:text-left">
-                        <Señalador numero="4" text={ContactContent.contacto.badge} />
+                        <Señalador numero="3" text={ContactContent.contacto.badge} />
                     </div>
 
                     {/* Título */}

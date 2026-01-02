@@ -8,7 +8,7 @@ export const Logros = () => {
     return (
         <>
             <section className="mb-6 text-center mx-auto">
-                <Señalador numero="4 " text="Logros" className="inline-block" />
+                <Señalador numero="3 " text="Logros" className="inline-block" />
             </section>
 
             <section className="bg-gray-950 py-16 mt-10">
@@ -62,7 +62,7 @@ export const Logros = () => {
             <section className="bg-gradient-to-r from-orange-300 to-orange-500 py-16">
                 <div className=" mx-auto  text-center">
                     <div className="mb-6">
-                        <Señalador numero="5 " text="Call To Action" className="inline-block" />
+                        <Señalador numero="4 " text="Call To Action" className="inline-block" />
                     </div>
 
                     <h2 className="text-white text-4xl md:text-5xl font-bold mb-8">

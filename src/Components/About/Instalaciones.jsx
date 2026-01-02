@@ -8,7 +8,7 @@ export const Instalaciones = () => {
     return (
         <>
             <section className="mb-6 text-center mx-auto">
-                <Señalador numero="3 " text="Instalaciones" className="inline-block" />
+                <Señalador numero="2 " text="Instalaciones" className="inline-block" />
             </section>
             <section>
                 <div>

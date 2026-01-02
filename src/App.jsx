@@ -3,6 +3,7 @@ import { Home } from './Pages/Home'
 import { Routes, Route } from 'react-router-dom'
 import { About } from './Pages/About'
 import { Contact } from './Pages/Contact'
+
 import ScrollToTop from './Components/Common/ScrollToTop'
 
 
@@ -12,8 +13,8 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/SobreNosotros" element={<About />} />
-        <Route path="/Contacto" element={<Contact />} />
+        <Route path="/sobrenosotros" element={<About />} />
+        <Route path="/contacto" element={<Contact />} />
       </Routes>
     </>
   )

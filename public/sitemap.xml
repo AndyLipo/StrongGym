@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Página principal -->
+
   <url>
     <loc>https://strongtraining.com.ar/</loc>
-    <lastmod>2024-12-20</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Agrega aquí más páginas si las tienes -->
- 
+
   <url>
-    <loc>https://strongtraining.com.ar/SobreNosotros</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://strongtraining.com.ar/sobrenosotros</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://strongtraining.com.ar/Contacto</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://strongtraining.com.ar/</loc>
-    <lastmod>2024-12-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://strongtraining.com.ar/contacto</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

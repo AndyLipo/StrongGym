@@ -26,7 +26,7 @@ export const Trainers = () => {
                     <div className='w-fit'>
                         <Link
                             to={{
-                                pathname: "/SobreNosotros",
+                                pathname: "/sobrenosotros",
                             }}
                         >
                             <ButtonGtStrt txt="Conoce los entrenadores" className='' />

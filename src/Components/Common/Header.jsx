@@ -6,8 +6,8 @@ export const Header = () => {
 
     const navItems = [
         { label: 'Inicio', to: '/' },
-        { label: 'Sobre Nosotros', to: '/SobreNosotros' },
-        { label: 'Contacto', to: '/Contacto' }, // ✅ Cambia a mayúscula para que coincida
+        { label: 'Sobre Nosotros', to: '/sobrenosotros' },
+        { label: 'Contacto', to: '/contacto' }, // ✅ Cambia a mayúscula para que coincida
     ];
 
     return (
