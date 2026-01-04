@@ -11,6 +11,7 @@ export const Footer = () => {
                         href="https://facebook.com/tugimnasio"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Boton red social Facebook"
                         className="hover:scale-110 transition-transform"
                     >
                         <FacebookIcon className="w-6 h-6 sm:w-7 sm:h-7 text-white hover:text-blue-500 transition-colors" />
@@ -19,6 +20,7 @@ export const Footer = () => {
                         href="https://www.instagram.com/strongtraining.arg/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Boton red social Instagram"
                         className="hover:scale-110 transition-transform"
                     >
                         <InstagramIcon className="w-6 h-6 sm:w-7 sm:h-7 text-white hover:text-pink-500 transition-colors" />

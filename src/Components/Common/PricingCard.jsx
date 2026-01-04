@@ -1,4 +1,6 @@
 import { ButtonGtStrt } from './ButtonGtStrt';
+import { Link } from 'react-router-dom'
+
 
 export const PricingCard = ({ plan, description, price, features, isPopular }) => {
     return (
@@ -10,7 +12,7 @@ export const PricingCard = ({ plan, description, price, features, isPopular }) =
         `}>
             {isPopular && (
                 <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-orange-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+                    <span className="bg-orange-500 text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
                         Más Popular
                     </span>
                 </div>
@@ -26,7 +28,7 @@ export const PricingCard = ({ plan, description, price, features, isPopular }) =
                 </p>
 
                 <div className="mb-4 sm:mb-6">
-                    <h2 className="text-white text-3xl sm:text-4xl font-bold">{price}</h2>
+                    <h4 className="text-white text-3xl sm:text-4xl font-bold">{price}</h4>
                     <div className="w-full h-px bg-zinc-600 mt-4"></div>
                 </div>
             </div>
@@ -52,9 +54,14 @@ export const PricingCard = ({ plan, description, price, features, isPopular }) =
                 ))}
             </div>
 
-            <div className="pt-4 mt-auto">
-                <ButtonGtStrt txt="Únete Ahora" />
-            </div>
+            <Link
+                to="/contacto#contact-form"
+                className='cursor-pointer'
+            >
+                <div className="pt-4 mt-auto cursor-pointer">
+                    <ButtonGtStrt txt="Únete Ahora" />
+                </div>
+            </Link>
         </div>
     );
 };

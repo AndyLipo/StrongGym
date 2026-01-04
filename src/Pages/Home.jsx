@@ -12,6 +12,7 @@ import { HeroContent } from '../Components/Home/HeroContent';
 import { WhatsAppBtn } from '../Components/Common/Icons/WhatsAppBtn';
 import StrongTrainingLogo2 from '../Components/Home/StrongTrainingLogo2';
 import '../Components/Home/CircularText.css';
+import { Link } from "react-router-dom";
 
 export const Home = () => {
     return (
@@ -39,8 +40,10 @@ export const Home = () => {
 
                 <main className="pt-20 sm:pt-24">
                     {/* HERO */}
-                    <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 gap-8 lg:gap-12">
-                        <div className="flex-1 w-full lg:w-1/2">
+                    <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 gap-8 lg:gap-12 min-h-[calc(100vh-5rem)]">
+                        {/* Texto Hero */}
+                        <div className="flex-1 w-full lg:w-1/2 order-1 lg:order-1">
+                            <h1 className="sr-only">Entrenamiento Personalizado en Escobar - Strong Training</h1>
                             <HeroContent
                                 prefix="TRANSFORMA"
                                 highlight="TU CUERPO"
@@ -48,22 +51,26 @@ export const Home = () => {
                                 highlight2="NOSOTROS"
                                 description="Alcanza tus objetivos con el mejor equipo de entrenadores en Escobar"
                             />
-                            <div className="flex justify-center lg:justify-start mt-6">
+                            <Link className="flex justify-center lg:justify-start mt-6"
+                                to="/contacto">
                                 <ButtonGtStrt txt="Inicia con nosotros" />
-                            </div>
+                            </Link>
                         </div>
 
-                        <div className="flex-1 w-full lg:w-1/2 flex items-center justify-center">
-                            <StrongTrainingLogo2
-                                segments={[
-                                    { text: "STRONG*", color: "#FF8C00" },
-                                    { text: "TRAI", color: "#FFFFFF" },
-                                    { text: "NING*", color: "#FF8C00" },
-                                    { text: "GYM*", color: "#FFFFFF" },
-                                ]}
-                                onHover="speedUp"
-                                spinDuration={25}
-                            />
+                        {/* Logo Circular */}
+                        <div className="flex-1 w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-2 py-8 lg:py-0">
+                            <div className="w-full max-w-[165px] sm:max-w-[240px] md:max-w-[280px] lg:max-w-[330px] mx-auto">
+                                <StrongTrainingLogo2
+                                    segments={[
+                                        { text: "STRONG*", color: "#FF8C00" },
+                                        { text: "TRAI", color: "#FFFFFF" },
+                                        { text: "NING*", color: "#FF8C00" },
+                                        { text: "GYM*", color: "#FFFFFF" },
+                                    ]}
+                                    onHover="speedUp"
+                                    spinDuration={25}
+                                />
+                            </div>
                         </div>
                     </section>
 

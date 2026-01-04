@@ -1,12 +1,12 @@
 .circular-text {
     margin: 0 auto;
     border-radius: 50%;
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
+    aspect-ratio: 1 / 1;
     position: relative;
-    height: 330px;
     font-weight: bold;
     color: #fff;
-    font-weight: 900;
     text-align: center;
     cursor: pointer;
     transform-origin: 50% 50%;
@@ -20,6 +20,38 @@
     right: 0;
     top: 0;
     bottom: 0;
-    font-size: 50px;
+    font-size: 24px;
+    /* Reducido por defecto */
     transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+/* Responsive breakpoints */
+@media (min-width: 640px) {
+    .circular-text {
+        max-width: 280px;
+    }
+
+    .circular-text span {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .circular-text {
+        max-width: 300px;
+    }
+
+    .circular-text span {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .circular-text {
+        max-width: 330px;
+    }
+
+    .circular-text span {
+        font-size: 50px;
+    }
 }

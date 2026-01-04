@@ -12,9 +12,9 @@ export const Entrenadores = () => {
             </section>
             <section className="px-4 sm:px-6 md:px-8 lg:px-12">
                 <section className="flex justify-center lg:justify-start mb-8 md:mb-12">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider text-white text-center lg:text-left">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wider text-white text-center lg:text-left">
                         {Entrenadores.titulo}
-                    </h3>
+                    </h1>
                 </section>
 
                 <div className="space-y-8 sm:space-y-10 md:space-y-12">
@@ -34,13 +34,13 @@ export const Entrenadores = () => {
                                     <img
                                         src={trainerImage?.image || CardEntrenador.imagen}
                                         alt={CardEntrenador.alt}
-                                        className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[300px] sm:max-h-[400px] lg:max-h-none"
+                                        className="w-full h-auto rounded-lg shadow-lg object-cover max-h-[490px] sm:max-h-[400px] md:max-h-[870px] lg:max-h-none"
                                     />
                                 </div>
                                 <div className="w-full lg:flex-1">
-                                    <h4 className="text-3xl sm:text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 text-center lg:text-left">
+                                    <h2 className="text-3xl sm:text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 text-center lg:text-left">
                                         {trainerImage?.name}
-                                    </h4>
+                                    </h2>
                                     <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed text-center lg:text-left">
                                         {CardEntrenador.texto}
                                     </p>

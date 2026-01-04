@@ -17,12 +17,12 @@ export const Trainers = () => {
             <div className="relative z-10 flex h-full">
                 {/* Lado izquierdo - Texto */}
                 <div className="flex-1 flex flex-col justify-center p-8 lg:p-16 ">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                         {HeroText.Trainers.TrainerTitle}
-                    </h2>
-                    <p className="text-white/90 text-lg mb-8 max-w-md leading-relaxed">
+                    </h1>
+                    <h2 className="text-white/90 text-lg mb-8 max-w-md leading-relaxed">
                         {HeroText.Trainers.EntrenadorParagraph}
-                    </p>
+                    </h2>
                     <div className='w-fit'>
                         <Link
                             to={{
@@ -46,7 +46,7 @@ export const Trainers = () => {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                         <div className="absolute bottom-2 left-2 text-white">
                                             <h3 className="text-sm font-bold">{trainer.name}</h3>
-                                            <p className="text-zinc-200 text-xs">{trainer.role}</p>
+                                            <h4 className="text-zinc-200 text-xs">{trainer.role}</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ export const Trainers = () => {
                                     style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[2].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[2].name}</h3>
+                                        <h4 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[2].name}</h4>
                                         <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[2].role}</p>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ export const Trainers = () => {
                                     style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[1].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[1].name}</h3>
+                                        <h4 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[1].name}</h4>
                                         <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[1].role}</p>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@ export const Trainers = () => {
                                     style={{ backgroundImage: `url(${HeroText.Trainers.ImgTrain[0].image})` }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-8 left-8 text-white">
-                                        <h3 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[0].name}</h3>
+                                        <h4 className="text-3xl font-bold mb-2">{HeroText.Trainers.ImgTrain[0].name}</h4>
                                         <p className="text-zinc-200 text-base">{HeroText.Trainers.ImgTrain[0].role}</p>
                                     </div>
                                 </div>

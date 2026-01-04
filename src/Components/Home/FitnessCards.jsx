@@ -49,9 +49,9 @@ export const FitnessCards = () => {
                         <div className="flex items-center justify-center mb-4">
                             <img src={card.icon} alt={card.title} className="w-28 h-28" />
                         </div>
-                        <h3 className="text-white font-bold text-base text-center">
+                        <h1 className="text-white font-bold text-base text-center">
                             {card.title}
-                        </h3>
+                        </h1>
                     </div>
                 ))}
             </div>
