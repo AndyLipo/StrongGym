@@ -1,12 +1,60 @@
-# React + Vite
+# 💪 StrongTraining – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page oficial de **StrongTraining**, una plataforma enfocada en entrenamiento de fuerza, disciplina y mejora física.  
+El objetivo principal del proyecto es presentar el servicio de forma clara, visualmente potente y orientada a la conversión de usuarios.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React**
+- **Tailwind CSS**
+- **Vite** (entorno de desarrollo)
+- **Lucide React** (iconos)
+- **shadcn/ui** (componentes UI, si aplica)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Objetivo del proyecto
+
+- Mostrar la propuesta de valor de StrongTraining
+- Captar potenciales clientes mediante llamados a la acción (CTA)
+- Ofrecer una experiencia moderna, rápida y responsive
+- Mantener una estructura simple y escalable
+
+---
+
+## 🧱 Estructura general
+
+- **Hero Section**  
+  Mensaje principal + CTA claro
+
+- **Beneficios / Servicios**  
+  Qué ofrece StrongTraining y por qué elegirlo
+
+- **Sección visual / motivacional**  
+  Refuerza el concepto de fuerza, constancia y disciplina
+
+- **Contacto / CTA final**  
+  Enlace a WhatsApp, formulario o medio de contacto
+
+---
+
+## 📱 Responsive Design
+
+La landing está diseñada para verse correctamente en:
+
+- Desktop
+- Tablets
+- Dispositivos móviles
+
+Usando utilidades responsive de Tailwind CSS.
+
+---
+
+## ⚙️ Instalación y uso
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/tu-usuario/strongtraining-landing.git
