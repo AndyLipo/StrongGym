@@ -18,15 +18,11 @@ export const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Strong Training | Entrenamiento Personalizado en Escobar</title>
-                <meta
-                    name="description"
-                    content="Strong Training es un gimnasio en Escobar especializado en entrenamiento personalizado, fuerza e hipertrofia. Sumate hoy."
-                />
-                <link
-                    rel="canonical"
-                    href="https://strongtraining.com.ar/"
-                />
+                <title>Gimnasio en Escobar | Strong Training - Entrenamiento Personalizado</title>
+                <meta name="description" content="Gimnasio en Escobar con entrenamiento personalizado. Planes de fuerza, hipertrofia y bienestar físico adaptados a tus objetivos." />
+                <link rel="canonical" href="https://strongtraining.com.ar/" />
+                <meta property="og:title" content="Gimnasio en Escobar | Strong Training" />
+                <meta property="og:description" content="Gimnasio en Escobar con entrenamiento personalizado. Fuerza, hipertrofia y bienestar." />
             </Helmet>
 
             <div className="bg-gradient-to-br from-black via-zinc-900 to-zinc-700 text-white min-h-screen">
@@ -43,7 +39,7 @@ export const Home = () => {
                     <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-16 gap-8 lg:gap-12 min-h-[calc(100vh-5rem)]">
                         {/* Texto Hero */}
                         <div className="flex-1 w-full lg:w-1/2 order-1 lg:order-1">
-                            <h1 className="sr-only">Entrenamiento Personalizado en Escobar - Strong Training</h1>
+                            <h1 className="sr-only">Gimnasio Personalizado en Escobar - Strong Training</h1>
                             <HeroContent
                                 prefix="TRANSFORMA"
                                 highlight="TU CUERPO"
@@ -76,6 +72,9 @@ export const Home = () => {
 
                     {/* SERVICIOS */}
                     <section className="mt-12 sm:mt-16">
+                        <h2 className="text-center text-2xl sm:text-3xl font-bold text-white mb-8 px-4">
+                            Nuestros servicios de <span className="text-[#FF8C00]">entrenamiento en Escobar</span>
+                        </h2>
                         <FitnessCards />
                     </section>
 
@@ -101,9 +100,9 @@ export const Home = () => {
                         <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900"></div>
 
                         <div className="mb-6 text-center relative">
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                                Sos bienvenido a <span className="text-[#FF8C00]">Unirte</span>
-                            </h2>
+                            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                                Visitanos en nuestro <span className="text-[#FF8C00]">Gimnasio en Escobar</span>
+                            </h3>
                         </div>
 
                         <div className="relative flex justify-center">

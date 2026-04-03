@@ -14,15 +14,11 @@ export const About = () => {
     return (
         <>
             <Helmet>
-                <title>Sobre Nosotros | Strong Training Escobar</title>
-                <meta
-                    name="description"
-                    content="Conocé Strong Training, nuestro equipo de entrenadores y nuestra filosofía de entrenamiento personalizado en Escobar."
-                />
-                <link
-                    rel="canonical"
-                    href="https://strongtraining.com.ar/sobrenosotros"
-                />
+                <title>Sobre Nosotros | Strong Training - Gimnasio en Escobar</title>
+                <meta name="description" content="Conocé la historia, metodología y equipo de Strong Training, el gimnasio de entrenamiento personalizado en Escobar." />
+                <link rel="canonical" href="https://strongtraining.com.ar/sobrenosotros" />
+                <meta property="og:title" content="Sobre Nosotros | Strong Training - Gimnasio en Escobar" />
+                <meta property="og:description" content="Conocé nuestro equipo, instalaciones y metodología de entrenamiento en Escobar." />
             </Helmet>
 
             <div className="bg-gradient-to-br from-black via-zinc-900 to-zinc-700 text-white min-h-screen">
@@ -37,8 +33,9 @@ export const About = () => {
                 <main className="pt-20">
                     {/* Hero con H1 */}
                     <section>
-                        <h1 className="sr-only">Sobre Strong Training Escobar</h1>
-                        <HeroVideo />
+                        <h1 className="text-3xl sm:text-4xl font-bold text-white text-center">
+                            <HeroVideo />
+                        </h1>
                     </section>
 
                     {/* Contenido SEO adicional */}

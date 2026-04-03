@@ -12,15 +12,11 @@ export const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>Contacto | Strong Training Escobar</title>
-                <meta
-                    name="description"
-                    content="Contactá a Strong Training en Escobar y comenzá tu plan de entrenamiento personalizado. Horarios, ubicación y atención directa."
-                />
-                <link
-                    rel="canonical"
-                    href="https://strongtraining.com.ar/contacto"
-                />
+                <title>Contacto | Strong Training - Gimnasio en Escobar</title>
+                <meta name="description" content="Contactate con Strong Training, tu gimnasio en Escobar. Consultá horarios, precios y comenzá tu entrenamiento personalizado hoy." />
+                <link rel="canonical" href="https://strongtraining.com.ar/contacto" />
+                <meta property="og:title" content="Contacto | Strong Training - Gimnasio en Escobar" />
+                <meta property="og:description" content="Contactate con Strong Training en Escobar. Horarios, precios y entrenamiento personalizado." />
             </Helmet>
 
             <div className="bg-gradient-to-br from-black via-zinc-900 to-zinc-700 text-white min-h-screen">
@@ -35,8 +31,9 @@ export const Contact = () => {
                 <main className="pt-20">
                     {/* Hero con H1 */}
                     <section>
-                        <h1 className="sr-only">Contacto Strong Training Escobar</h1>
-                        <HeroContact />
+                        <h1 className="text-3xl sm:text-4xl font-bold text-white text-center">
+                            <HeroContact />
+                        </h1>
                     </section>
 
                     {/* Contenido SEO adicional */}
